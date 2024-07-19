@@ -4,7 +4,7 @@ import { DataContext } from "../../context/DataContext";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BASE_URL_LOCAL } from "../../constants/constant";
+import { BASE_URL_PROD } from "../../constants/constant";
 import React from "react";
 
 const Review = () => {
@@ -78,7 +78,7 @@ const DownloadModal = ({ data }) => {
 
   const initiateProcess = async () => {
     try {
-      const response = await axios.post(`${BASE_URL_LOCAL}/api/createpdf`, {
+      const response = await axios.post(`${BASE_URL_PROD}/api/createpdf`, {
         data,
       });
       console.log(response.data);
