@@ -123,7 +123,7 @@ const DownloadModal = ({ data }) => {
                   <div className="mt-2">
                     {isOpen && (
                       <a
-                        href={`${BASE_URL_LOCAL}/api/getpdf?id=${pdfId}`}
+                        href={`${BASE_URL_PROD}/api/getpdf?id=${pdfId}`}
                         download={`${pdfId}.pdf`}
                       >
                         <button className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
